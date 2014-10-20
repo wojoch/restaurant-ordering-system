@@ -5,11 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class MainCourse implements Item{
+public class MainCourse extends Item{
 
-	@Id
-	@GeneratedValue
-	private Integer id;
 	private String name;
 	private Double price;
 	private String description;
@@ -18,12 +15,6 @@ public class MainCourse implements Item{
 		Polish, Mexican, Italian;
 	}
 
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
 	public String getName() {
 		return name;
 	}

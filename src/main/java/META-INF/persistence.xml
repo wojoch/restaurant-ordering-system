@@ -8,5 +8,6 @@
 		<class>com.wojoch.ros.entity.MainCourse</class>
 		<class>com.wojoch.ros.entity.Menu</class>
 		<class>com.wojoch.ros.entity.Order</class>
+		<class>com.wojoch.ros.entity.Item</class>
 	</persistence-unit>
 </persistence>
