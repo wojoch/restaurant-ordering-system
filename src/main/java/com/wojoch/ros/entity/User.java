@@ -16,7 +16,7 @@ import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;
 
-import com.wojoch.ros.annotation.UniqueUsername;
+import com.wojoch.ros.annotation.UniqueLogin;
 
 @Entity
 public class User {
@@ -27,7 +27,7 @@ public class User {
 	
 	@Size(min = 3, message = "Name must be at least 3 characters!")
 	@Column(unique=true)
-	@UniqueUsername(message = "Such login already exists!")
+	@UniqueLogin(message = "Such login already exists!")
 	private String login;
 	
 	@Size(min = 5, message = "Name must be at least 5 characters!")

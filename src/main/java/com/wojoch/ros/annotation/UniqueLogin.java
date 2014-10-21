@@ -9,8 +9,8 @@ import javax.validation.Payload;
 
 @Target({ FIELD })
 @Retention(RUNTIME)
-@Constraint(validatedBy = { UniqueUsernameValidator.class })
-public @interface UniqueUsername {
+@Constraint(validatedBy = { UniqueLoginValidator.class })
+public @interface UniqueLogin {
 	String message();
 
 	Class<?>[] groups() default {};
