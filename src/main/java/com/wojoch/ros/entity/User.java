@@ -22,7 +22,9 @@ public class User {
 	private String email;
 	private String phoneNumber;
 	private String address;
-	
+	private String postalCode;
+	private String city;
+
 	@ManyToMany
 	@JoinTable
 	private List<Role> roles;
@@ -90,6 +92,18 @@ public class User {
 	}
 	public void setOrders(List<Order> orders) {
 		this.orders = orders;
+	}
+	public String getPostalCode() {
+		return postalCode;
+	}
+	public void setPostalCode(String postalCode) {
+		this.postalCode = postalCode;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
 	}
 
 }
