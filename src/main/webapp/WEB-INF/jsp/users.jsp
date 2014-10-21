@@ -6,21 +6,25 @@
 <table class="table table-bordered table-hover table-striped table-condensed">
 	<thead>
 		<tr>
+			<th>Id</th>
 			<th>Login</th>
 			<th>First Name</th>
 			<th>Last Name</th>
-			<th>Address</th>
 			<th>E-mail</th>
+			<th>Address</th>
+			<th>Phone number</th>
 		</tr>
 	</thead>
 	<tbody>
 		<c:forEach items="${users}" var="user">
 			<tr>
+				<td>${user.id}</td>
 				<td>${user.login}</td>
 				<td>${user.firstName}</td>
 				<td>${user.lastName}</td>
-				<td>${user.address}</td>
 				<td>${user.email}</td>
+				<td>${user.address} ${user.postalCode} ${user.city}</td>
+				<td>${user.phoneNumber}</td>
 			</tr>
 		</c:forEach>
 	</tbody>

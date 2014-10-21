@@ -48,5 +48,7 @@
 	</bean>
 
 	<jpa:repositories base-package="com.wojoch.ros.repository" />
+	
+	<import resource="security.xml"/>
 
 </beans>
