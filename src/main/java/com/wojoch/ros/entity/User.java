@@ -24,6 +24,7 @@ public class User {
 	private String address;
 	private String postalCode;
 	private String city;
+	private boolean enabled;
 
 	@ManyToMany
 	@JoinTable
@@ -104,6 +105,12 @@ public class User {
 	}
 	public void setCity(String city) {
 		this.city = city;
+	}
+	public boolean isEnabled() {
+		return enabled;
+	}
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
 	}
 
 }

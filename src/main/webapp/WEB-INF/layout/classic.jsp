@@ -59,6 +59,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<security:authorize access="isAuthenticated()">
 							<li><a href="<spring:url value="/logout" />">Logout</a></li>
+							<li class="${current == 'users' ? 'active' : ''}"><a href='<spring:url value="/account.html" />'>My account</a></li>
 						</security:authorize>
 						<security:authorize access="! isAuthenticated()">
 							<li class="${current == 'register' ? 'active' : ''}"><a href='<spring:url value="/register.html" />'>Register</a></li>
