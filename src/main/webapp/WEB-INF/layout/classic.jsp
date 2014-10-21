@@ -55,7 +55,8 @@
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="${current == 'register' ? 'active' : ''}"><a href='<spring:url value="/register.html" />'>Register</a></li>
-						<li><a href="../navbar-fixed-top/">Fixed top</a></li>
+						<li class="${current == 'login' ? 'active' : ''}"><a href='<spring:url value="/login.html" />'>Login</a></li>
+						<li><a href="<spring:url value="/logout" />">Logout</a></li>
 					</ul>
 				</div>
 				<!--/.nav-collapse -->
