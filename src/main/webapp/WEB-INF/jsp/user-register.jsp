@@ -25,12 +25,14 @@
 		<label for="login" class="col-sm-2 control-label">Login</label>
 		<div class="col-sm-10">
 			<form:input path="login" cssClass="form-control" placeholder="Enter login"/>
+			<form:errors path="login"/>
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="password" class="col-sm-2 control-label">Password</label>
 		<div class="col-sm-10">
 			<form:password path="password" cssClass="form-control" placeholder="Enter password"/>
+			<form:errors path="password"/>
 		</div>
 		
 	</div>
@@ -38,6 +40,7 @@
 		<label for="email" class="col-sm-2 control-label">E-mail</label>
 		<div class="col-sm-10">
 			<form:input path="email" cssClass="form-control" placeholder="Enter email"/>
+			<form:errors path="email"/>
 		</div>
 	</div>
 	<div class="form-group">
