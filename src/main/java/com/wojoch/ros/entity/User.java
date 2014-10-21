@@ -10,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -19,6 +20,7 @@ import org.hibernate.validator.constraints.Length;
 import com.wojoch.ros.annotation.UniqueLogin;
 
 @Entity
+@Table(name="User")
 public class User {
 
 	@Id
@@ -137,5 +139,4 @@ public class User {
 	public void setEnabled(boolean enabled) {
 		this.enabled = enabled;
 	}
-
 }
